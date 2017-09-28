@@ -1,5 +1,7 @@
 # GitHub_Repo_Search_Metrics
 
+-----
+
 #### rbhatia$ python github_repo_search_metrics.py
 
 1. Top 5 most frequently issued queries = 
@@ -10,6 +12,7 @@
 
 3. Average length of a search session = 60845.36
 
+-----
 
 #### Imagine that you need to answer question number 1 from above, but over a dataset containing hundreds of billions of rows, split across many files. What techniques would you use to accomplish this?
 
