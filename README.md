@@ -1,5 +1,16 @@
 # GitHub_Repo_Search_Metrics
 
+#### rbhatia$ python github_repo_search_metrics.py
+
+1. Top 5 most frequently issued queries = 
+ [('/search?q=crop', 21), ('/search?q=entosphere', 19), ('/search?q=kerchunk', 16), ('/search?q=hemosalpinx', 16), ('/search?q=operette', 16)]
+
+2. Top 5 queries in terms of the total number of results clicked = 
+ [('/search?q=crop', 58), ('/search?q=hemosalpinx', 47), ('/search?q=kerchunk', 46), ('/search?q=entosphere', 45), ('/search?q=contrabandage', 44)]
+
+3. Average length of a search session = 60845.36
+
+
 ### Imagine that you need to answer question number 1 from above, but over a dataset containing hundreds of billions of rows, split across many files. What techniques would you use to accomplish this?
 
 #### With hundreds of billions of rows split across many files, a viable solution is to use MapReduce.  Let's take the example of calculating the top 5 most frequently issued queries:
