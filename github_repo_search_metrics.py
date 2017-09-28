@@ -48,4 +48,4 @@ for k, v in dicttsFin.items():
     count += 1
     _sum += v
 
-print("\n\nAverage length of a search session = {}\n".format(_sum/count))
+print("\n\nAverage length of a search session = {} sec. \n".format(_sum/count))

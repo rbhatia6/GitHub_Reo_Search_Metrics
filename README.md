@@ -10,7 +10,7 @@
 2. Top 5 queries in terms of the total number of results clicked = 
  [('/search?q=crop', 58), ('/search?q=hemosalpinx', 47), ('/search?q=kerchunk', 46), ('/search?q=entosphere', 45), ('/search?q=contrabandage', 44)]
 
-3. Average length of a search session = 60845.36
+3. Average length of a search session = 60845.36 sec.
 
 -----
 
