@@ -11,9 +11,9 @@
 3. Average length of a search session = 60845.36
 
 
-### Imagine that you need to answer question number 1 from above, but over a dataset containing hundreds of billions of rows, split across many files. What techniques would you use to accomplish this?
+#### Imagine that you need to answer question number 1 from above, but over a dataset containing hundreds of billions of rows, split across many files. What techniques would you use to accomplish this?
 
-#### With hundreds of billions of rows split across many files, a viable solution is to use MapReduce.  Let's take the example of calculating the top 5 most frequently issued queries:
+##### With hundreds of billions of rows split across many files, a viable solution is to use MapReduce.  Let's take the example of calculating the top 5 most frequently issued queries:
 
 1. Several instances of the mapper function are created on the different machines in our cluster.
 
