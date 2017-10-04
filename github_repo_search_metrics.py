@@ -1,4 +1,5 @@
 import csv
+import math
 import numpy as np
 import pandas as pd
 from operator import itemgetter
@@ -47,5 +48,37 @@ count = _sum = 0
 for k, v in dicttsFin.items():
     count += 1
     _sum += v
+    print("k = {}, v = {}".format(k, v))
 
 print("\n\nAverage length of a search session = {} sec. \n".format(_sum/count))
+        
+min1  = min(dicttsFin.values())
+max1  = max(dicttsFin.values())
+
+print("min = {}, max = {}".format(min1, max1))
+
+buckets = 10
+
+range1 = max1 - min1
+
+bsize = range1 / buckets
+
+hm = {}
+for i in range(buckets):
+    hm[i] = 0
+
+for k, v in dicttsFin.items():
+    buck = math.floor(((v - min1)/bsize))
+    if buck == buckets: 
+        buck = buckets-1 
+
+    if hm.get(buck):
+        hm[buck] += 1
+    else:
+        hm[buck] = 1
+
+for k, v in sorted(hm.items()):
+    outstr = "{}"
+    for i in range(v):
+        outstr = outstr + " *"
+    print(outstr.format(k))
